@@ -158,6 +158,7 @@ def friendship():
     print(f"Enter the word you made from {word_to_check}")
     friends_word = input()
     def letter_count(word):
+        word = word.lower()
         list_for_count = list(word)
         dict_of_count = Counter(list_for_count)
         return dict_of_count
